@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  direction: rtl;
+}
+body.dark {
+  background: #141414 !important;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  margin: 0 auto;
+}
+nav.dark {
+  background-color: #fff;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  padding: 8px 15px;
+}
+nav #theme {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+}
+nav .btn-login {
+  background-color: aquamarine;
+  padding: 0px 5px 5px 5px;
+}
+nav .btn-login:hover {
+  background-color: #33ffba !important;
+}
+
+/*# sourceMappingURL=main.css.map */

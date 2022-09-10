@@ -5,7 +5,7 @@
             <a href="index.php">خانه</a>
         </li>
         <li>
-            <a href="#">
+            <a href="students.php">
                 افزودن دانشجو
             </a>
         </li>
