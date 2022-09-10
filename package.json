@@ -1,0 +1,25 @@
+{
+  "name": "univercity-panel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch assets/scss/main.scss assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyberAli1989/univercity-panel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CyberAli1989/univercity-panel/issues"
+  },
+  "homepage": "https://github.com/CyberAli1989/univercity-panel#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.2.1",
+    "jquery": "^3.6.1"
+  }
+}
