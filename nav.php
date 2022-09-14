@@ -1,4 +1,7 @@
-
+<?php
+require_once "vendor/autoload.php";
+require_once "inc/db.php";
+?>
 <nav>
     <ul>
         <li>
@@ -6,7 +9,7 @@
         </li>
         <li>
             <a href="students.php">
-                افزودن دانشجو
+                لیست دانشجو
             </a>
         </li>
         <li>
@@ -14,11 +17,32 @@
                 غذای دانشجو
             </a>
         </li>
+        <?php if (isset($_SESSION['name'])): ?>
+        <li>
+            <a href="addStudent.php">افزودن دانشجو</a>
+        </li>
+
+        <?php endif; ?>
     </ul>
     <ul>
-        <li>
-            <a class="btn btn-login" href="login.php">ورود</a>
-        </li>
+        <?php if (!isset($_SESSION['name'])): ?>
+            <li>
+                <a class="btn btn-login" href="login.php">ورود</a>
+            </li>
+        <?php endif; ?>
+
+        <?php
+        if (isset($_SESSION['name'])):
+            ?>
+            <li>
+                <p class=mb-0>
+                    <?php echo $_SESSION['name'] ?>
+                    <a class="btn btn-danger" href="controller/logOutControl.php">خروج</a>
+
+                </p>
+            </li>
+
+        <?php endif; ?>
         <li>
             <button id="theme">
                 <i class="fa fa-moon"></i>
